@@ -19,18 +19,25 @@
     position: absolute;
     top: 255px;
     display: none;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
 
   &:hover {
-    img {
-      opacity: 0.8;
-    }
+      img {
+        opacity: 0.8;
+      }
 
-    button {
-      opacity: 0.85;
-      display: flex;
+      button {
+        opacity: 0.85;
+        display: flex;
+      }
     }
-  }
 
   .footer {
     width: 100%;
@@ -46,6 +53,20 @@
 
     .price {
       width: 10%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+
+    &:hover {
+      img {
+        opacity: unset;
+      }
+
+      button {
+        opacity: unset;
+      }
     }
   }
 }

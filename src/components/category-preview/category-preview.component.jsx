@@ -7,8 +7,9 @@ import "./category-preview.styles.scss";
 const CategoryPreview = ({ title, products }) => (
   <div className="category-preview-container">
     <h2>
-      <link className="title" to={title}></link>
-      <span className="title">{title.toUpperCase()}</span>
+      <Link className="title" to={title}>
+        <span className="title">{title.toUpperCase()}</span>
+      </Link>
     </h2>
     <div className="preview">
       {products
